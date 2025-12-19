@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AS1 Videos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --background-url: url('https://i.imgur.com/o4HcwfU.png');
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: var(--background-url);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.65);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .video {
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            background: #000;
+            text-align: center;
+        }
+
+        .video video {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .video-title {
+            margin: 8px 0;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>𝙰𝚂𝟷 𝚅𝚒𝚍𝚎𝚘𝚜</h1>
+
+        <div class="video-grid">
+            <div class="video">
+                <div class="video-title">Rip X's Base Grief</div>
+                <video src="ripbasegrief1.mp4" controls></video>
+            </div>
+            <div class="video">
+                <div class="video-title">Crish and Liam Playing</div>
+                <video src="crish.mp4" controls></video>
+            </div>
+            <div class="video">
+                <div class="video-title">a8q5 Self Griefing</div>
+                <video src="selfgrief.mp4" controls></video>
+            </div>
+            <div class="video">
+                <div class="video-title">10k Days Played Original Map</div>
+                <video src="10k.mp4" controls></video>
+            </div>
+            <div class="video">
+                <div class="video-title">Greenboy and a8q5 Fight</div>
+                <video src="greenboy1.mp4" controls></video>
+            </div>
+            <div class="video">
+                <div class="video-title">a8q5 Griefs Banana's Base</div>
+                <video src="banana1.mp4" controls></video>
+            </div>
+            <div class="video">
+                <div class="video-title">Big Base Grief From a8</div>
+                <video src="bigbase1.mp4" controls></video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
