@@ -17,85 +17,56 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
         }
 
-        .overlay {
-            background: rgba(0, 0, 0, 0.65);
-            min-height: 100vh;
-            padding: 40px 20px;
+        .container {
+            background: rgba(0,0,0,0.65);
+            padding: 40px 30px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
         }
 
         h1 {
-            text-align: center;
             margin-bottom: 30px;
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
 
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .video {
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-            background: #000;
-            text-align: center;
-        }
-
-        .video video {
-            width: 100%;
-            height: 100%;
+        .video-link {
             display: block;
+            margin: 10px 0;
+            padding: 14px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #6a5acd, #836fff);
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: transform 0.2s ease, opacity 0.2s ease;
         }
 
-        .video-title {
-            margin: 8px 0;
-            font-weight: bold;
-            font-size: 1rem;
-            color: #ffffff;
+        .video-link:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
-    <div class="overlay">
+    <div class="container">
         <h1>𝙰𝚂𝟷 𝚅𝚒𝚍𝚎𝚘𝚜</h1>
 
-        <div class="video-grid">
-            <div class="video">
-                <div class="video-title">Rip X's Base Grief</div>
-                <video src="ripbasegrief1.mp4" controls></video>
-            </div>
-            <div class="video">
-                <div class="video-title">Crish and Liam Playing</div>
-                <video src="crish.mp4" controls></video>
-            </div>
-            <div class="video">
-                <div class="video-title">a8q5 Self Griefing</div>
-                <video src="selfgrief.mp4" controls></video>
-            </div>
-            <div class="video">
-                <div class="video-title">10k Days Played Original Map</div>
-                <video src="10k.mp4" controls></video>
-            </div>
-            <div class="video">
-                <div class="video-title">Greenboy and a8q5 Fight</div>
-                <video src="greenboy1.mp4" controls></video>
-            </div>
-            <div class="video">
-                <div class="video-title">a8q5 Griefs Banana's Base</div>
-                <video src="banana1.mp4" controls></video>
-            </div>
-            <div class="video">
-                <div class="video-title">Big Base Grief From a8</div>
-                <video src="bigbase1.mp4" controls></video>
-            </div>
-        </div>
+        <a class="video-link" href="https://www.youtube.com/watch?v=F2DhVZV6ikY&t=1s" target="_blank">Rip X's Base Grief</a>
+        <a class="video-link" href="www.youtube.com/watch?v=4yt2Tq3q_rw" target="_blank">Crish and Liam Playing</a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=-yBEtp68-TU" target="_blank">a8q5 Self Griefing</a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=1lU9ZWZoJhk" target="_blank">10k Days Played Original Map</a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=OVHA0O6TKd8" target="_blank">Greenboy and a8q5 Fight</a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=8TtLasXKx10&t=1s" target="_blank">a8q5 Griefs Banana's Base</a>
+        <a class="video-link" href="www.youtube.com/watch?v=LyDYr6xmZQg" target="_blank">Big Base Grief From a8</a>
     </div>
 </body>
 </html>
